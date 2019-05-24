@@ -30,11 +30,11 @@ public class ChineseChess {
     }
 
     /**
-     * 只使用一个字节的存储算法
+     * 只使用一个字节的存储算法，由于java
      * 本质就是用一个字节实现了双层循环，验证如方法chessMethodForAnotherDoubleCircle
      */
     private void chessMethodForOneByte() {
-        int i  =81;
+        byte i  =81;
         while (i-- != 0) {
             if (i/9%3 == i%9%3) {
                 continue;
@@ -49,7 +49,7 @@ public class ChineseChess {
     private void chessMethodForAnotherDoubleCircle() {
         int i=81;
         while (i-- > 0) {
-            System.out.print(" " + i/9 + "------" + i%9);
+            System.out.print(" " + i/9 + "-" + i%9);
         }
     }
 }
