@@ -10,8 +10,8 @@ public class TwoStackQueue {
     private Stack<Integer> stackPop;
 
     public TwoStackQueue() {
-        this.stackPush = new Stack<>();
-        this.stackPop = new Stack<>();
+        this.stackPush = new Stack<Integer>();
+        this.stackPop = new Stack<Integer>();
     }
 
     public void add(int element) {

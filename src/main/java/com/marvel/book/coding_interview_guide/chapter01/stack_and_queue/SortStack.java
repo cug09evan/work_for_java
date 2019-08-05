@@ -10,7 +10,7 @@ import java.util.Stack;
 public class SortStack {
 
     private static void sortStackByStack(Stack<Integer> stack) {
-        Stack<Integer> tempStack = new Stack<>();
+        Stack<Integer> tempStack = new Stack<Integer>();
         tempStack.push(stack.pop());
         while (!stack.empty()) {
             if (stack.peek() >= tempStack.peek()) {
@@ -30,7 +30,7 @@ public class SortStack {
     }
 
     private static void sortStackByStackOptition(Stack<Integer> stack) {
-        Stack<Integer> help = new Stack<>();
+        Stack<Integer> help = new Stack<Integer>();
         while (! stack.empty()) {
             int element = stack.pop();
             while (!help.empty() && help.peek() < element) {
@@ -44,7 +44,7 @@ public class SortStack {
     }
 
     public static void main(String[] args) {
-        Stack<Integer> stack = new Stack<>();
+        Stack<Integer> stack = new Stack<Integer>();
         stack.push(3);
         stack.push(10);
         stack.push(1);

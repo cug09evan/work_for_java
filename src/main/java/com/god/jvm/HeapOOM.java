@@ -13,7 +13,7 @@ public class HeapOOM {
     }
 
     public static void main(String[] args) {
-        List<OOMObejct> list = new ArrayList<>();
+        List<OOMObejct> list = new ArrayList<OOMObejct>();
         while (true) {
             list.add(new OOMObejct());
         }
